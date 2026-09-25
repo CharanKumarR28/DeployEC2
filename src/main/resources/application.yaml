@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: Deploy-EC2
+
+server:
+  port: 2434
+
+
