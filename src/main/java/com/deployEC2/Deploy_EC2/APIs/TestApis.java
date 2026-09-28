@@ -6,6 +6,10 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/test")
 public class TestApis {
 
+    public TestApis() {
+        System.out.println("TestApis constructor called");
+    }
+
     @PostMapping("/post")
     public String postTest() {
         return "POST API is working";
