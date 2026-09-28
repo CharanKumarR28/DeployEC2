@@ -15,6 +15,11 @@ public class TestApis {
         return "POST API is working";
     }
 
+    @GetMapping("/getwithlogin")
+    public String getWithLogin() {
+        return "you got success";
+    }
+
     @GetMapping("/get")
     public int getSum(@RequestParam int a, @RequestHeader int b) {
         return a + b;
